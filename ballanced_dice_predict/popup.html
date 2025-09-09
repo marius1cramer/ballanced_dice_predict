@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Dice Solver</title>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+    /* Ensure only the outer sidebar scrolls */
+    #dice-solver-overlay {
+        height: 100vh;
+        overflow-y: auto;
+        /* other styles as needed */
+    }
+    .dice-solver-content, .tab-pane, .dice-solver-header, .dice-solver-tabs, #player-7-likelihood, #distribution-table, #roll-history-list {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="dice-solver-overlay">
+        <div class="dice-solver-header">
+            <span class="dice-solver-title">⚙️ Settings</span>
+        </div>
+        <div class="dice-solver-content">
+            <div id="settings" class="tab-pane active">
+                <h3 class="settings-title">Appearance</h3>
+                <div class="settings-group">
+                    <label class="toggle-label">
+                        <input type="checkbox" id="dark-mode-toggle" />
+                        <span>Dark Mode</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

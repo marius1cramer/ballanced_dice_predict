@@ -1,0 +1,35 @@
+	{
+  "manifest_version": 3,
+  "name": "Colonist.io Dice Tracker",
+  "version": "1.0.0",
+  "description": "Tracks and displays dice rolls in Colonist.io games",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://colonist.io/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Colonist.io Dice Tracker"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    min-width: 220px;
+    min-height: 120px;
+}
+
+#dice-solver-overlay {
+    width: 260px;
+    min-height: 120px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dice-solver-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px 10px 18px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fafafa;
+}
+
+.dice-solver-title {
+    flex: 1;
+}
+
+.dice-solver-content {
+    flex: 1;
+    padding: 18px 20px 16px 20px;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.settings-title {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.settings-group {
+    margin-bottom: 16px;
+}
+.toggle-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+/* Dark mode */
+.dark-mode, .dark-mode #dice-solver-overlay {
+    background: #23272f !important;
+    color: #f5f5f5 !important;
+}
+.dark-mode .dice-solver-header {
+    background: #23272f !important;
+    color: #f5f5f5 !important;
+    border-bottom: 1px solid #444 !important;
+}
+.dark-mode .settings-title {
+    color: #fff !important;
+}
+.dark-mode .toggle-label {
+    color: #fff !important;
+}
